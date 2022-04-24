@@ -8,7 +8,7 @@ export const Slideshow = () => {
   const [pic, setPic] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/corousel")
+    fetch("https://amazonabc.herokuapp.com/corousel")
       .then((res) => res.json())
       .then((images) => setPic(images));
   }, [pic]);

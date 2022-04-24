@@ -15,7 +15,7 @@ export const ProductDetails = () => {
     const [product, setProduct] = useState([]);
     useEffect(() => {
         const getProduct = async () => {
-            const response = await fetch(`http://localhost:3001/products/${id}`);
+            const response = await fetch(`https://amazonabc.herokuapp.com/products${id}`);
             setProduct(await response.json());
         }
         getProduct()

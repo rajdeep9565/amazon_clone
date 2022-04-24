@@ -10,7 +10,7 @@ export const Home = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:3001/products")
+        fetch("https://amazonabc.herokuapp.com/products")
             .then((res) => res.json())
             .then((res) => dispatch(storeData(res)))
             .catch((err) => console.error(err))
