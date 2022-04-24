@@ -65,7 +65,7 @@ export const Cart = () => {
             <label ><b>This order contains a gift</b></label>
             <div className='empty'> </div>
             <div className='empty'> </div>
-            <div><button className="f-btn" onClick={navigate("./")} >Proceed to Buy</button></div>
+            <div><button className="f-btn" onClick={() => navigate("/ThankYou")} >Proceed to Buy</button></div>
             
             
         </div>
