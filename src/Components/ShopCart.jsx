@@ -23,7 +23,6 @@ export const Cart = () => {
         settotal_price(sum)
     }, [cartdata])
 
-    console.log(typeof total_price)
 
     const deleteproduct = (product) => {
         dispatch(delCart(product))
@@ -33,16 +32,7 @@ export const Cart = () => {
         dispatch(addCart(product))
     }
 
-     const my_func_1 = (cartdata) => {
-        // return cartdata.length == null;
-     }
-     const my_func_2 = () => {
-        navigate("/ThankYou")
-    }
-    const myfun = () => {
-        my_func_1();
-    my_func_2()
-    }
+   
 
     const navigate = useNavigate()
     return (
@@ -75,7 +65,8 @@ export const Cart = () => {
             <label ><b>This order contains a gift</b></label>
             <div className='empty'> </div>
             <div className='empty'> </div>
-            <button className="f-btn" onClick={myfun()} >Proceed to Buy</button>
+            <div><button className="f-btn" onClick={navigate("./")} >Proceed to Buy</button></div>
+            
             
         </div>
 
